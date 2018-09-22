@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:18081';
+axios.defaults.baseURL = '/';
 axios.defaults.headers.common['app'] = 'SM-APP';
 
 axios.interceptors.request.use(requestConfig => {

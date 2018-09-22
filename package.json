@@ -38,6 +38,6 @@
   "scripts": {
     "build": "rimraf dist && webpack -d",
     "build-prod": "rimraf dist && webpack --config webpack.config.prod.js --mode=production --progress --profile --color",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --port 18085"
   }
 }
