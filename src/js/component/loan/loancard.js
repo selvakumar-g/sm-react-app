@@ -2,7 +2,7 @@ import React from 'react';
 
 const menucard = (props) => {
     return (
-        <div className="col-md-4 mb-3">
+        <div className="col-lg-4 mb-3">
             <div className="card">
                 <div className="card-header">
                     <strong>{props.card.loanName}</strong>
