@@ -6,7 +6,7 @@ const BUILD_DIR = path.join(__dirname, 'dist')
 const APP_DIR = path.join(__dirname, 'src')
 
 const VENDOR_LIBS = [
-    "axios", "bootstrap", "chart.js", "jquery", "moment", "prop-types",
+    "axios", "bootstrap", "chart.js", "moment", "prop-types",
     "react", "react-bootstrap-table", "react-chartjs-2", "react-day-picker",
     "react-dom", "react-modal", "react-router-dom", "react-select"
 ]
@@ -14,8 +14,8 @@ const VENDOR_LIBS = [
 const buildConfig = {
     devtool: 'cheap-module-source-map',
     entry: APP_DIR + '/index.js',
-    //entry: {
-    //  bundle: APP_DIR + '/index.js',
+    // entry: {
+    // bundle: APP_DIR + '/index.js',
     //vendor: VENDOR_LIBS
     //},
     output: {
@@ -52,7 +52,7 @@ const buildConfig = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: APP_DIR + '/index.html'
+            template: APP_DIR + '/index.html',
         }),
         //new webpack.optimize.CommonsChunkPlugin({
         // names: ['vendor', 'manifest']
